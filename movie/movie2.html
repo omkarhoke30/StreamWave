@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Details</title>
+
+<style>
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background:#0b0f28;
+  color:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:rgba(0,0,0,0.7);
+  flex-wrap:wrap;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#00d4ff;
+}
+
+.nav{
+  display:flex;
+  gap:15px;
+}
+
+.nav a{
+  text-decoration:none;
+  color:white;
+  font-size:1.34rem;
+}
+
+/* HERO SECTION */
+.movie-hero{
+  display:flex;
+  gap:30px;
+  padding:30px 20px;
+  align-items:flex-start;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* POSTER */
+.poster{
+  flex:1;
+}
+
+.poster img{
+  width:100%;
+  max-width:300px;
+  border-radius:10px;
+}
+
+/* DETAILS */
+.details{
+  flex:2;
+}
+
+.details h1{
+  font-size:28px;
+}
+
+.meta{
+  margin:10px 0;
+  color:#aaa;
+  font-size:14px;
+}
+
+.description{
+  margin-top:15px;
+  line-height:1.6;
+  font-size:14px;
+}
+
+/* BUTTONS */
+.buttons{
+  margin-top:15px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.buttons button{
+  padding:10px 15px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  background:linear-gradient(to right, cyan, purple);
+  color:white;
+  font-size:14px;
+}
+
+/* TRAILER SECTION */
+.trailer{
+  padding:30px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.trailer h2{
+  margin-bottom:15px;
+}
+
+/* RESPONSIVE VIDEO */
+.video-container{
+  position:relative;
+  width:90%;
+  padding-bottom:56.25%; /* 16:9 ratio */
+}
+
+.video-container iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border:none;
+  border-radius:10px;
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+@media (max-width: 900px){
+
+  .movie-hero{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .poster img{
+    max-width:250px;
+  }
+
+  .details{
+    width:100%;
+  }
+
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media (max-width: 480px){
+
+  .logo{
+    font-size:18px;
+  }
+
+  .nav{
+    width:100%;
+    justify-content:center;
+    margin-top:10px;
+  }
+
+  .details h1{
+    font-size:22px;
+  }
+
+  .description{
+    font-size:13px;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+}
+.logo{
+    width: 200px;
+}
+.logo >img{
+width: 100%;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo"><img src="../images/logo.png"  alt=""></div>
+  <div class="nav">
+    <a href="../home.html">Home</a>
+    <a href="../home.html#main-cursel">Movies</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="movie-hero">
+
+  <!-- POSTER -->
+  <div class="poster">
+    <img src="../images/f1.jpg" alt="Movie">
+  </div>
+
+  <!-- DETAILS -->
+  <div class="details">
+    <h1>Brad Pitt-F1 Driver</h1>
+
+    <div class="meta">
+      2023 • U/A 13+ • sports • 3h
+    </div>
+
+    <div class="buttons">
+      <button><a href="">▶ Play</a></button>
+      <button>+ Watchlist</button>
+    </div>
+
+    <p class="description">
+        ⭐⭐⭐⭐☆ (4.5/5)<br>
+     A young and fearless Formula 1 driver rises from the underground racing scene to the world’s biggest motorsport stage. Facing intense rivalries, high-speed risks, and personal struggles, he must prove his talent against the best drivers on the grid. As pressure builds both on and off the track, every race becomes a test of skill, courage, and determination.
+    </p>
+  </div>
+
+</section>
+
+<!-- TRAILER -->
+<section class="trailer">
+  <h2>🎬 Trailer</h2>
+
+  <div class="video-container">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/OqYpcfjmRdA?si="
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+</section>
+
+</body>
+</html>
