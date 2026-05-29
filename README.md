@@ -1,2 +1,1 @@
-
-this is the movie stteaming website
+Stream Wave is a sleek and modern streaming website created as part of my web development projects. It features a user-friendly interface with sections like featured content, trending shows, categories, and watchlist. The project focuses on UI design, responsiveness, and real-world application layout.
